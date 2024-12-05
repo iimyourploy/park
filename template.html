@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="sideandnav.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        body{
+            display: grid;
+            grid-template-columns: 1fr 4fr;
+            grid-template-rows: auto 1fr;
+            grid-template-areas: 
+            "nav nav"
+            "sidebar content";
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+            background: #fdfbec;
+            box-sizing: border-box;
+        }
+        .Dashboard{
+            background-color: #fad25a;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>comsci</h1>
+        <p>park</p>
+    </nav>
+    <side class="sidebar">
+        <div class="profile">
+            <div class="image-user">
+                <img src="user.jpg" alt="User Picture">
+            </div>
+            <!-- เชื่อมกับ db -->
+            <div class="userInfo">
+                <p>Jane</p>
+                <p>Maneger</p>
+            </div>
+        </div>
+        <menu>
+            <ul>
+                <li class="Dashboard"><a href="template.html"><i class='bx bxs-dashboard'></i> Dashboard</a></li>
+                <li class="Tiket"><a href=""><i class='bx bxs-id-card'></i> Tiket</a></li>
+                <li class="Customer"><a href=""><i class='bx bxs-user'></i> Customer</a></li>
+                <li class="Transaction"><a href=""><i class='bx bxs-bar-chart-alt-2'></i> Transaction</a></li>
+                <li class="Place"><a href=""><i class='bx bxs-map'></i> Place</a></li>
+                <li class="Employee"><a href=""><i class='bx bxs-briefcase'></i></i> Employee</a></li>
+                <li class="Review"><a href=""><i class='bx bxs-report'></i> Review</a></li>
+            </ul>
+        </menu>
+        <footer class="logout">
+            <a href="index.html"><i class='bx bx-log-out'></i> Logout</a>
+        </footer>
+    </side>
+    <content>
+        <!-- <div class="topic">Dashboard</div> -->
+    </content>
+</body>
+</html>
